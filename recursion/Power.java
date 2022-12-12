@@ -1,7 +1,5 @@
 package recursion;
 
-import main.Main;
-
 public class Power
 {
     public float power(int number,int power)
