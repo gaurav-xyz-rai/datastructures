@@ -10,7 +10,7 @@ public class SumOfDigits
         }
         if (n < 0)
         {
-            return ();
+            return (0);
         }
         return (n%10 + sumOfDigits(n/10));
     }
