@@ -4,11 +4,7 @@ public class Palindrome
 {
     public boolean isPalindrome(String s)
     {
-        if (reverse(s).equalsIgnoreCase(s))
-        {
-            return true;
-        }
-        return false;
+        return  (reverse(s).equalsIgnoreCase(s));
     }
 
     public String reverse(String str)

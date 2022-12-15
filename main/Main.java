@@ -19,5 +19,7 @@ public class Main
         System.out.println("The recursive Range is : " + new RecursiveRange().recursiveRange(6));
         System.out.println("The reverse of the String is : " + new Reverse().reverse("appmillers"));
         System.out.println("This string is Palindrome : " + new Palindrome().isPalindrome("tacocat"));
+        System.out.println("The first capital character in the String is : " + new FirstCapital().first("appmillerS"));
+        System.out.println("The capitalized word is : " + new CapitalizeWords().capitalizeWord("i love java"));
     }
 }
