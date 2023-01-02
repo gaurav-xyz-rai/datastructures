@@ -10,7 +10,7 @@ public class Main
         /* The Recursion classes*/
         System.out.println("The Fibonacci number is : " + new Fibonacci().fibonacci(-15));
         System.out.println("The Sum of Digits are : " + new SumOfDigits().sumOfDigits(10345));
-        System.out.println("The power is : " + new Power().power(5,-1));
+        System.out.println("The power is : " + new Power().power(2.00000,10));
         System.out.println("The GCD of the two numbers are : " + new Gcd().gcd(8,-4));
         System.out.println("The Binary is : " + new DecimalToBinary().decimalToBinary(-333));
         System.out.println("The factorial of the number is : " + new Factorial().factorial(5));
@@ -21,5 +21,11 @@ public class Main
         System.out.println("This string is Palindrome : " + new Palindrome().isPalindrome("tacocat"));
         System.out.println("The first capital character in the String is : " + new FirstCapital().first("appmillerS"));
         System.out.println("The capitalized word is : " + new CapitalizeWords().capitalizeWord("i love java"));
+        int powerOfInteger = 16;
+        System.out.println("The number " + powerOfInteger + " is a power if 2 ? " + new PowerOfTwo().isPowerOfTwo(powerOfInteger));
+        String str = "aab";
+        String pattern = "c*a*b";
+        System.out.println("The String is : " + str + " the pattern is : " + pattern + " matching : " +
+                new RegularExpressionMatching().isMatch(str,pattern) );
     }
 }

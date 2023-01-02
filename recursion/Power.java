@@ -2,7 +2,7 @@ package recursion;
 
 public class Power
 {
-    public float power(int number,int power)
+  /***  public float power(int number,int power)
     {
         if (power == 0)
         {
@@ -19,5 +19,23 @@ public class Power
         }
         return (number * power(number,power-1));
 
+    } ***/
+
+    public double power(double x, int n)
+    {
+        if (n == 0)
+        {
+            return 1;
+        }
+        if (n == 1)
+        {
+            return x;
+        }
+        /***if (n < 0)
+        {
+            n = Math.abs(n);
+            return (1/(x * power(x,n-1)));
+        }***/
+        return (x * power(x,n-1));
     }
 }
